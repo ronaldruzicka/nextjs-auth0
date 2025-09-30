@@ -7,10 +7,10 @@ import {
 import { hkdf } from "@panva/hkdf";
 import * as jose from "jose";
 
-const ENC = "A256GCM";
+const ENC = 'A256CBC-HS512';
 const ALG = "dir";
 const DIGEST = "sha256";
-const BYTE_LENGTH = 32;
+const BYTE_LENGTH = 64;
 const ENCRYPTION_INFO = "JWE CEK";
 
 export async function encrypt(
